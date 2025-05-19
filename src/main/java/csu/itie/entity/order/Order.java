@@ -1,4 +1,4 @@
-package csu.itie.entity;
+package csu.itie.entity.order;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -15,6 +15,8 @@ public class Order {
     private String userName;
     @TableField(value = "linenum")
     private int lineNum;
+    @TableField("paymethod")
     private String payMethod;
+    @TableField(value = "totalprice")
     private float totalPrice;
 }
